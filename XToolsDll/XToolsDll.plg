@@ -1,0 +1,65 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: XToolsDll - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Alx666\IMPOST~1\Temp\RSP19.tmp" with contents
+[
+/nologo /MT /w /W0 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "XTOOLSDLL_EXPORTS" /Fp"Release/XToolsDll.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Cpp\XBot\XToolsDll\XBot.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Alx666\IMPOST~1\Temp\RSP19.tmp" 
+Creating temporary file "C:\DOCUME~1\Alx666\IMPOST~1\Temp\RSP1A.tmp" with contents
+[
+Winmm.lib d3dx8.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:no /pdb:"Release/XTools.pdb" /machine:I386 /out:"..\Release\XTools 2.0\XTools.dll" /implib:"Release/XTools.lib" 
+.\Release\ApiHijack.obj
+.\Release\CIniFile.obj
+.\Release\Crc32.obj
+.\Release\dllmain.obj
+.\Release\FAKE_IDirect3D8.obj
+.\Release\FAKE_IDirect3DDevice8.obj
+.\Release\FAKE_IDirect3DTexture8.obj
+.\Release\FAKE_IDirectInput8.obj
+.\Release\FAKE_IDirectInputDevice8.obj
+.\Release\Hooks.obj
+.\Release\ModuleHider.obj
+.\Release\Timer.obj
+.\Release\UObject.obj
+.\Release\UPickup.obj
+.\Release\UTarget.obj
+.\Release\XAim.obj
+.\Release\XBot.obj
+.\Release\XBot2.obj
+.\Release\XClient.obj
+.\Release\XCommandHandler.obj
+.\Release\XConfig.obj
+.\Release\XConsole.obj
+.\Release\XD3DAnalyzer.obj
+.\Release\XDodger.obj
+.\Release\XDrawer.obj
+.\Release\XFileFormat.obj
+.\Release\XInputHandler.obj
+.\Release\XMenu.obj
+.\Release\XParser.obj
+.\Release\XRegedit.obj
+.\Release\XSock.obj
+.\Release\XTextureLogger.obj
+.\Release\XUT2k4CommandHandler.obj
+.\Release\XUTSock.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\Alx666\IMPOST~1\Temp\RSP1A.tmp"
+<h3>Output Window</h3>
+Compiling...
+XBot.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+XTools.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

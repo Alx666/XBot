@@ -1,0 +1,264 @@
+<HTML>
+<HEAD>
+	<CENTER><BIG>XBot Console Functions</BIG></CENTER>
+</HEAD>
+	
+<BODY>
+<p> 
+<hr>
+<BIG>
+setAlpha(alphaVal, TYPE);</BIG><BR><BR>
+
+=> alphaVal = alpha value(0-100)<BR>
+=> TYPE = must be one of [MENU, MENU_FONT, CONSOLE, RADAR_PIX, RADAR_FONT, CROSSHAIR];<BR><BR>
+
+DEFAULT VALUE: 80 for all TYPE<BR><BR>
+
+Set the alpha value of the selected TYPE.<BR>
+</P>
+
+<p> 
+<hr>
+<BIG>
+backgroundMode();</BIG><BR><BR>
+
+Set the console to run in background mode. In this mode console don't get keypress and don't slideIn after timeout.<BR>
+</P>
+
+<p> 
+<hr>
+<BIG>
+connect();</BIG><BR><BR>
+
+Connect XBot to all the known IPs.<BR>
+</P>
+
+<p> 
+<hr>
+<BIG>
+disconnect();</BIG><BR><BR>
+
+Disconnect XBot from all the known IPs.<BR>
+</P>
+
+<p> 
+<hr>
+<BIG>
+clrScr();</BIG><BR><BR>
+
+Clear the console history.<BR>
+</P>
+
+<p> 
+<hr>
+<BIG>
+setXHairSize(value, TYPE);</BIG><BR><BR>
+
+=> value = crosshair size(1-350);<BR>
+=> TYPE  = must be one of [ALL,SHIELD,ASSAULT_RIFLE,GES,SHOCK,LINK,MINIGUN,FLAK,ROCKET,SNIPER];<BR><BR>
+
+DEFAULT VALUE: 50 for all TYPE<BR><BR>
+
+Set the crosshair size for weapon TYPE. <BR>
+</P>
+
+<p> 
+<hr>
+<BIG>
+setPlayerSpeedMode(MODE);</BIG><BR><BR>
+
+=> MODE = must be one of [NORMALIZED,NOT_NORMALIZED];<BR><BR>
+
+DEFAULT VALUE: NOT_NORMALIZED<BR><BR>
+
+Used in aim-algorithms computations, for low-framePerSecond PCs NORMALIZED is reccomended.<BR>
+</P>
+
+<p> 
+<hr>
+<BIG>
+setAimSpeed(value,TYPE); </BIG><BR><BR>
+
+=> value = aimSpeed value (1-200);<BR>
+=> TYPE  = must be one of [ALL,SHIELD,ASSAULT_RIFLE,GES,SHOCK,LINK,MINIGUN,FLAK,ROCKET,SNIPER];<BR><BR>
+
+DEFAULT VALUE: 40 for all TYPE<BR><BR>
+
+Set the speed at which auto-aim moves  your mouse for weapon TYPE.<BR>
+</P>
+
+<p> 
+<hr>
+<BIG>
+setUnlockStrenght(value);</BIG><BR><BR>
+
+=> value = unlock str. value(1-100);<BR><BR>
+
+DEFAULT VALUE: 20<BR><BR>
+
+Set the amount of pixel to be moved with a single mouse movement to unlock current target.<BR>
+</P> 
+
+<p> 
+<hr>
+<BIG>
+enableTimer(value);</BIG><BR><BR>
+
+=> value = must be one of [ON, OFF];<BR><BR>
+
+DEFAULT VALUE: ON<BR><BR>
+
+Enable or disabel timers.<BR>
+</P>
+
+<p> 
+<hr>
+<BIG>
+enableTimerSound(value);</BIG><BR><BR>
+
+=> value = must be one of [ON, OFF];<BR><BR>
+
+DEFAULT VALUE: ON<BR><BR>
+
+Enable or disabel timers sound played when time is critical.<BR>
+</P>
+
+<p> 
+<hr>
+<BIG>
+addToStartup(str);</BIG><BR><BR>
+
+=> str =  must be a valid function name with appropriate arguments, all enclosed within double quote;<BR><BR>
+	 Example: addToStartup( "setAlpha(80,CONSOLE) " )<BR><BR>
+
+
+Add the function specified between the 2 double quote to the startup.conf file.<BR>
+</P>
+
+<p> 
+<hr>
+<BIG>
+setImodeType(value, TYPE);</BIG><BR><BR>
+
+=> value = must be one of [AUTO,FIXER,NONE_DISABLED,NONE_ENABLED];<BR>
+=> TYPE  = must be one of [ALL,SHIELD,ASSAULT_RIFLE,GES,SHOCK,LINK,MINIGUN,FLAK,ROCKET,SNIPER];<BR><BR>
+
+DEFAULT VALUE: NONE_DISABLED for all TYPE<BR><BR>
+
+NOTE: recommended settings are:<BR><BR>
+
+	- shield gun : 		IMODE_TYPE_NONE_DISABLED;<BR>
+	- assault rifle : 	IMODE_TYPE_AUTO or IMODE_TYPE_FIXER;<BR>
+	- ges biorifle: 	IMODE_TYPE_AUTO or IMODE_TYPE_FIXER;<BR>
+	- shock rifle: 		IMODE_TYPE_AUTO or IMODE_TYPE_FIXER;<BR>
+	- link gun : 		IMODE_TYPE_AUTO or IMODE_TYPE_FIXER;<BR>
+	- minigun : 		IMODE_TYPE_AUTO or IMODE_TYPE_FIXER;<BR>
+	- flak cannon : 	IMODE_TYPE_FIXER;<BR>
+	- rocket launcher : 	IMODE_TYPE_FIXER;<BR>
+	- sniper rifle : 	IMODE_TYPE_AUTO or IMODE_TYPE_FIXER;<BR>
+	- lighting  gun : 	IMODE_TYPE_AUTO or IMODE_TYPE_FIXER;<BR><BR>
+
+Set the ImodeType for weapon TYPE.<BR>
+</P>
+
+<p> 
+<hr>
+<BIG>
+setWeaponRange(value, TYPE);</BIG><BR><BR>
+
+=> value = weapon range (0,10000) or [INFINITE];<BR>
+=> TYPE  = must be one of [ALL,SHIELD,ASSAULT_RIFLE,GES,SHOCK,LINK,MINIGUN,FLAK,ROCKET,SNIPER];<BR><BR>
+
+DEFAULT VALUE: INFINITE for all TYPE<BR><BR>
+
+Set the  range in which XBOT will auto-aim your current target. <BR>
+</P>
+
+<p> 
+<hr>
+<BIG>
+setAutoBlastComboRange(min, max);</BIG><BR><BR>
+
+=> min  = must be a positive number;<BR>
+=> max  = must be a positive number;<BR><BR>
+
+DEFAULT VALUE: min = 140, max = 400<BR><BR>
+
+Set the  range in which XBOT will auto-blast shock combos if they are near an enemy<BR>
+</P>
+
+<p> 
+<hr>
+<BIG>
+join(roomNumber);</BIG><BR><BR>
+
+=> roomNumber = must be a positive number;<BR><BR>
+
+
+DEFAULT VALUE: the global room, Room n.0<BR><BR>
+
+Join the Room  specified by roomNumber. When a player joins a room all the net traffic (except chat message) will be sent only to other players with the same room number.<BR>
+</P>
+
+<p> 
+<hr>
+<BIG>
+leave();</BIG><BR><BR>
+
+Leave the current room. The current room will became the N. 0.<BR>
+
+<p> 
+<hr>
+<BIG>
+setTimeoutWeaponAutoSwap(value);</BIG><BR><BR>
+
+=> value = timeout value in millisec, must be a positive number;<BR><BR>
+
+DEFAULT VALUE: 3000<BR><BR>
+
+Set the idle timeout after an autoswapWeaponCombo is automatically stopped. <BR>
+</P>
+
+<p> 
+<hr>
+<BIG>
+addAutoSwapWeaponCombo(fireMode, starterWeapon, .... , lastWeapon);</BIG><BR><BR>
+
+=> fireMode 	 = must be one of [PRIM, SEC];<BR>
+=> starterWeapon = must be one of [SHIELD,ASSAULT_RIFLE,GES,SHOCK,LINK,MINIGUN,FLAK,ROCKET,SNIPER,LIGHT_GUN];<BR>
+=> ......        = you can insert  0 or more parameters here, each of them must be one of [SHIELD,ASSAULT_RIFLE,GES,SHOCK,LINK,MINIGUN,FLAK,ROCKET,SNIPER,LIGHT_GUN];<BR>
+=> lastWeapon    = must be one of [SHIELD,ASSAULT_RIFLE,GES,SHOCK,LINK,MINIGUN,FLAK,ROCKET,SNIPER,LIGHT_GUN];<BR><BR>
+	
+   Example: addAutoSwapWeaponCombo(PRIM, SHOCK, LIGHT_GUN, ROCKET, SHOCK)<br>
+            Remember that at leat fireMOde,starterWeapon and lastWeapon parameters are required.<br><br>
+		
+Add the SwapCombo you defined to the SwapCombo List. <BR>
+</P>
+
+<p> 
+<hr>
+<BIG>
+getAutoSwapWeaponComboList();</BIG><BR><BR>
+
+Show the SwapCombo List. <BR>
+</P>
+
+<p> 
+<hr>
+<BIG>
+clearAutoSwapWeaponComboList();</BIG><BR><BR>
+
+clears the SwapCombo List. <BR>
+</P> 
+
+<p> 
+<hr>
+<BIG>
+getPlayerList();</BIG><BR><BR>
+
+Show all the connected players and the rooms they are in. <BR>
+</P> 
+
+</BODY>
+
+</HTML>

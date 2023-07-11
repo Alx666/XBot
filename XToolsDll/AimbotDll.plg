@@ -1,0 +1,72 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: AimbotDll - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Alx666\IMPOST~1\Temp\RSP27.tmp" with contents
+[
+/nologo /MT /w /W0 /GX /O2 /Ob2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "AIMBOTDLL_EXPORTS" /Fp"Release/AimbotDll.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Cpp\XBot\XBotDll\ApiHijack.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Alx666\IMPOST~1\Temp\RSP27.tmp" 
+Creating temporary file "C:\DOCUME~1\Alx666\IMPOST~1\Temp\RSP28.tmp" with contents
+[
+Winmm.lib d3dx8.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:no /pdb:"Release/UT2k4.pdb" /machine:I386 /out:"..\Release\XBot Release 2.0\UT2k4.dll" /implib:"Release/UT2k4.lib" 
+.\Release\ApiHijack.obj
+.\Release\CIniFile.obj
+.\Release\Crc32.obj
+.\Release\dllmain.obj
+.\Release\FAKE_IDirect3D8.obj
+.\Release\FAKE_IDirect3DDevice8.obj
+.\Release\FAKE_IDirect3DTexture8.obj
+.\Release\FAKE_IDirectInput8.obj
+.\Release\FAKE_IDirectInputDevice8.obj
+.\Release\Hooks.obj
+.\Release\ModuleHider.obj
+.\Release\Timer.obj
+.\Release\UObject.obj
+.\Release\UPickup.obj
+.\Release\UTarget.obj
+.\Release\XAim.obj
+.\Release\XBot.obj
+.\Release\XBot2.obj
+.\Release\XClient.obj
+.\Release\XCommandHandler.obj
+.\Release\XConfig.obj
+.\Release\XConsole.obj
+.\Release\XD3DAnalyzer.obj
+.\Release\XDodger.obj
+.\Release\XDrawer.obj
+.\Release\XFileFormat.obj
+.\Release\XInputHandler.obj
+.\Release\XMenu.obj
+.\Release\XParser.obj
+.\Release\XSock.obj
+.\Release\XTextureLogger.obj
+.\Release\XUT2k4CommandHandler.obj
+.\Release\XUTSock.obj
+.\Release\XWeaponSwapper.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\Alx666\IMPOST~1\Temp\RSP28.tmp"
+<h3>Output Window</h3>
+Compiling...
+ApiHijack.cpp
+C:\Cpp\XBot\XBotDll\ApiHijack.cpp(190) : error C2440: '=' : cannot convert from 'unsigned long *' to 'unsigned long'
+        This conversion requires a reinterpret_cast, a C-style cast or function-style cast
+C:\Cpp\XBot\XBotDll\ApiHijack.cpp(197) : error C2446: '>' : no conversion from 'unsigned long *' to 'unsigned long'
+        This conversion requires a reinterpret_cast, a C-style cast or function-style cast
+C:\Cpp\XBot\XBotDll\ApiHijack.cpp(197) : error C2040: '>' : 'unsigned long' differs in levels of indirection from 'unsigned long *'
+C:\Cpp\XBot\XBotDll\ApiHijack.cpp(198) : error C2440: '=' : cannot convert from 'unsigned long *' to 'unsigned long'
+        This conversion requires a reinterpret_cast, a C-style cast or function-style cast
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+UT2k4.dll - 4 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

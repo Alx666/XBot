@@ -1,0 +1,7 @@
+- risolto errore in XFileFormat::GetFileDescriptor 
+	ove _strupr((char*)extension) provocava un crash
+
+- rilevato errore in XBot::ShockComboRoutines, appena viene disegnata una shock combo crasha
+	- quando la shock core si distrugge (scompare dallo schermo crasha)
+	- probabilmente xche l'iteratore viene rimosso durante il ciclo stesso
+

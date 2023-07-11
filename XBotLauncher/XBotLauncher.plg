@@ -1,0 +1,66 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: XBotLauncher - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Dario\IMPOST~1\Temp\RSP165.tmp" with contents
+[
+/nologo /MD /w /W0 /GX /O2 /Ob2 /I "C:\Programmi\Qt\include" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "QT_DLL" /D "QT_THREAD_SUPPORT" /Fp"Release/XBotLauncher.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Documents and Settings\Dario\Documenti\C++ Projects\XBot Workspace\XBotLauncher\LineEditEx.cpp"
+"C:\Documents and Settings\Dario\Documenti\C++ Projects\XBot Workspace\XBotLauncher\main.cpp"
+"C:\Documents and Settings\Dario\Documenti\C++ Projects\XBot Workspace\XBotLauncher\moc_LineEditEx.cpp"
+"C:\Documents and Settings\Dario\Documenti\C++ Projects\XBot Workspace\XBotLauncher\moc_xbotlauncherdialog.cpp"
+"C:\Documents and Settings\Dario\Documenti\C++ Projects\XBot Workspace\XBotLauncher\moc_xbotlauncherdialogbase.cpp"
+"C:\Documents and Settings\Dario\Documenti\C++ Projects\XBot Workspace\XBotLauncher\moc_XGlLogo.cpp"
+"C:\Documents and Settings\Dario\Documenti\C++ Projects\XBot Workspace\XBotLauncher\moc_XListView.cpp"
+"C:\Documents and Settings\Dario\Documenti\C++ Projects\XBot Workspace\XBotLauncher\xbotlauncherdialog.cpp"
+"C:\Documents and Settings\Dario\Documenti\C++ Projects\XBot Workspace\XBotLauncher\xbotlauncherdialogbase.cpp"
+"C:\Documents and Settings\Dario\Documenti\C++ Projects\XBot Workspace\XBotLauncher\XGlLogo.cpp"
+"C:\Documents and Settings\Dario\Documenti\C++ Projects\XBot Workspace\XBotLauncher\XListView.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Dario\IMPOST~1\Temp\RSP165.tmp" 
+Creating temporary file "C:\DOCUME~1\Dario\IMPOST~1\Temp\RSP166.tmp" with contents
+[
+Winmm.lib glaux.lib opengl32.lib glu32.lib detours\detours.lib kernel32.lib user32.lib gdi32.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib imm32.lib wsock32.lib C:\Programmi\Qt\lib\qt-mt333.lib C:\Programmi\Qt\lib\qtmain.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/XBot.pdb" /machine:I386 /out:"..\Release\XBot Release 2.0\XBot.exe" 
+".\Release\CiniFile.obj"
+".\Release\LineEditEx.obj"
+".\Release\main.obj"
+".\Release\moc_LineEditEx.obj"
+".\Release\moc_xbotlauncherdialog.obj"
+".\Release\moc_xbotlauncherdialogbase.obj"
+".\Release\moc_XGlLogo.obj"
+".\Release\moc_XListView.obj"
+".\Release\xbotlauncherdialog.obj"
+".\Release\xbotlauncherdialogbase.obj"
+".\Release\XConfig.obj"
+".\Release\XFileFormat.obj"
+".\Release\XGlLogo.obj"
+".\Release\XListView.obj"
+".\Release\XBotLauncher.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\Dario\IMPOST~1\Temp\RSP166.tmp"
+<h3>Output Window</h3>
+Compiling...
+LineEditEx.cpp
+main.cpp
+moc_LineEditEx.cpp
+moc_xbotlauncherdialog.cpp
+moc_xbotlauncherdialogbase.cpp
+moc_XGlLogo.cpp
+moc_XListView.cpp
+xbotlauncherdialog.cpp
+xbotlauncherdialogbase.cpp
+XGlLogo.cpp
+XListView.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+XBot.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

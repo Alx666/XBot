@@ -1,0 +1,44 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: XWEAPONTEST - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Alx666\IMPOST~1\Temp\RSPBC.tmp" with contents
+[
+/nologo /MLd /w /W0 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/XWEAPONTEST.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Cpp\XBot\XWEAPONTEST\main.cpp"
+"C:\Cpp\XBot\XWEAPONTEST\XFireMode.cpp"
+"C:\Cpp\XBot\XWEAPONTEST\XFireModeDirectInstantOnKeydown.cpp"
+"C:\Cpp\XBot\XWEAPONTEST\XWeapon.cpp"
+"C:\Cpp\XBot\XWEAPONTEST\XWeaponManager.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Alx666\IMPOST~1\Temp\RSPBC.tmp" 
+Creating temporary file "C:\DOCUME~1\Alx666\IMPOST~1\Temp\RSPBD.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/XWEAPONTEST.pdb" /debug /machine:I386 /out:"Debug/XWEAPONTEST.exe" /pdbtype:sept 
+.\Debug\main.obj
+.\Debug\XFireMode.obj
+.\Debug\XFireModeDirectInstantOnKeydown.obj
+.\Debug\XWeapon.obj
+.\Debug\XWeaponManager.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\Alx666\IMPOST~1\Temp\RSPBD.tmp"
+<h3>Output Window</h3>
+Compiling...
+main.cpp
+XFireMode.cpp
+XFireModeDirectInstantOnKeydown.cpp
+XWeapon.cpp
+XWeaponManager.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+XWEAPONTEST.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
